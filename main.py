@@ -14,14 +14,16 @@ def resize_photos(session):
     all_photos_count = 0
     resized_photos = []
     for photo in get_project_photos(session=session):
+        resized_photo = { "id": photo.id, "Base64PBIFlag": True, "Base64PBIStr": None, "Base64PBICompressionRate": None }
         try:
             compression_rate, base64str = resize_to_base64(photo.File)
             if compression_rate != None: compressed_photos_count = compressed_photos_count + 1
-            resized_photo = { "id": photo.id, "Base64PBIFlag": True, "Base64PBIStr": base64str, "Base64PBICompressionRate": compression_rate }
-            resized_photos.append(resized_photo)
+            resized_photo["Base64PBICompressionRate"] = compression_rate
+            resized_photo["Base64PBIStr"] = base64str
         except:
             continue
         finally:
+            resized_photos.append(resized_photo)
             all_photos_count = all_photos_count + 1
     return (resized_photos, all_photos_count, compressed_photos_count)
 
