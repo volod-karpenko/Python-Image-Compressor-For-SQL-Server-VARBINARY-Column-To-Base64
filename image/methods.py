@@ -1,3 +1,4 @@
+from config import BASE64_STRING_LENGTH
 from PIL import Image
 import base64
 import io
@@ -23,7 +24,7 @@ def convert_to_base64(image: Image.Image) -> str:
         base64str = base64.b64encode(iobytes).decode("utf-8")
         return base64str
     
-def resize_to_base64(binary_file: bytes, base64str_length_limit = 32000) -> tuple[Optional[int], str]:
+def resize_to_base64(binary_file: bytes, base64str_length_limit = BASE64_STRING_LENGTH) -> tuple[Optional[int], str]:
     image = bytes_to_image(binary_file=binary_file)
     if not image:
         return (None, "")

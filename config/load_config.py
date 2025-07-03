@@ -11,7 +11,8 @@ env_variables = {
     "INTEGRATION_TYPE_ID": int,
     "DATABASE_LOG_FLAG": int,
     "INFO_LOG": int,
-    "ERROR_MESSAGE": str
+    "ERROR_MESSAGE": str,
+    "BASE64_STRING_LENGTH": int
 }
 
 load_dotenv(override=True)
@@ -29,3 +30,4 @@ INTEGRATION_TYPE_ID = env_variables["INTEGRATION_TYPE_ID"]
 DATABASE_LOG_FLAG = env_variables["DATABASE_LOG_FLAG"] or 0
 INFO_LOG = env_variables["INFO_LOG"] or 0
 ERROR_MESSAGE = env_variables["ERROR_MESSAGE"] or "Oooppppsssss...unexpected error occured! Please, examine program logs for more details"
+BASE64_STRING_LENGTH = env_variables["BASE64_STRING_LENGTH"] or 32000
