@@ -94,7 +94,7 @@ Here is a comprehensive list of them:
 - :grey_exclamation: **PROJECT_PHOTO_LIMIT_ROWS** -> number of photos that are processed within one program run, **optional**, ```default = 25```
 - :exclamation: **INTEGRATION_TYPE_ID** -> is necessary for the legacy *HISTORY* Database structure , **requiered** in case you set ```DATABASE_LOG_FLAG = 1```
 - :grey_exclamation: **DATABASE_LOG_FLAG** -> specifies if logs are written to *HISTORY* Database, **optional**, ```default = 0```
-- :grey_exclamation: **INFO_LOG** -> specifies if logs are written to *logs.log*, **optional**, ```default = 0```
+- :grey_exclamation: **INFO_LOG** -> specifies if info logs are written to *logs.log*, **optional**, ```default = 0```
 - :grey_exclamation: **ERROR_MESSAGE** -> custom error message to write to *HISTORY* Database, **optional**, ```default = "Oooppppsssss...unexpected error occured! Please, examine program logs for more details"```
 - :grey_exclamation: **BASE64_STRING_LENGTH** -> the upper bound of a *base64* string length, **optional**, ```default = 32000```  
 As for the database logs, you may turn them off, but I needed them to monitor in the main system if the **Task Scheduler** successfully runs the script & process the images :point_down:
