@@ -25,14 +25,14 @@ Originally, **FileShort** column has been developed for a very different purpose
 3. **Base64PBICompressionRate** -> to store compression rate (between 5% and 99%), the **lower** the value the **better** quality has been preserved
 
 ## :rocket: Results Achieved
-1. Better quality for most of the images: on average for each image **the length of the base64 string has grown twice**, so did the quality :point_down:
-![better-quality-example-1.png](https://i.postimg.cc/sDMsdGVF/better-quality-example-1.png)
-![better-quality-example-2.png](https://i.postimg.cc/Pqjjw61h/better-quality-example-2.png)
-![better-quality-example-3.png](https://i.postimg.cc/K8Lb4XkJ/better-quality-example-3.png)
-2. Truncated images aren't truncated anymore :point_down:
-![truncation-example-1.png](https://i.postimg.cc/KvCFZcz1/truncation-example-1.png)
-![truncation-example-2.png](https://i.postimg.cc/yNyzXFTR/truncation-example-2.png)
-![truncation-example-3.png](https://i.postimg.cc/NMkZmBBk/truncation-example-3.png)
+1. Better quality for most of the images: on average for each image **the length of the base64 string has grown twice**, so did the quality :point_down:  
+![better-quality-example-1.png](https://i.postimg.cc/sDMsdGVF/better-quality-example-1.png)  
+![better-quality-example-2.png](https://i.postimg.cc/Pqjjw61h/better-quality-example-2.png)  
+![better-quality-example-3.png](https://i.postimg.cc/K8Lb4XkJ/better-quality-example-3.png)  
+2. Truncated images aren't truncated anymore :point_down:  
+![truncation-example-1.png](https://i.postimg.cc/KvCFZcz1/truncation-example-1.png)  
+![truncation-example-2.png](https://i.postimg.cc/yNyzXFTR/truncation-example-2.png)  
+![truncation-example-3.png](https://i.postimg.cc/NMkZmBBk/truncation-example-3.png)  
 
 ## :file_folder: Project Structure
 <pre>
