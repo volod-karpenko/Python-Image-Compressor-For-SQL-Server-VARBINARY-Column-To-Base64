@@ -69,12 +69,12 @@ root/
 git clone https://github.com/volod-karpenko/Python-Image-Compressor-For-SQL-Server-VARBINARY-Column-To-Base64.git
 cd Python-Image-Compressor-For-SQL-Server-VARBINARY-Column-To-Base64
 python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 These commands clone the repository, change the directory to the root folder of ```main.py```, initialize python virtual environment for the project & install the libraries.   
 After you configure the ```.env``` file & set up databases ([you can download minimum necessary database backups here - image binary sample data included](https://drive.google.com/file/d/15pEfpQGgYW7dfX_VEQVyf7wQ1biWyX-G/view?usp=sharing)), go to ```Python-Image-Compressor-For-SQL-Server-VARBINARY-Column-To-Base64``` folder & run in cmd:
 ```bash
-venv\Scripts\activate
 python main.py
 ```
 :bookmark: I personally created ```.bat``` file & configured a task in **Task Scheduler** to run the script automatically on a schedule
